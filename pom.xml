@@ -4,7 +4,7 @@
 
   <groupId>com.test</groupId>
   <artifactId>HelloWorldMaven</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.7-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>HelloWorldMaven</name>
@@ -14,6 +14,19 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
+  
+<distributionManagement>
+  <repository>
+    <id>releases</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://169.47.63.233:8081/repository/maven-releases</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://169.47.63.233:8081/repository/maven-snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
 
   <dependencies>
     <dependency>
