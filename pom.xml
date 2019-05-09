@@ -14,13 +14,12 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   
-<distributionManagement>
-       <repository>
+ <repository>
          <id>internal.repo</id>
          <name>Internal repo</name>
-         <url>file:///usr/local/myartifacts/</url>
+         <url>file:///usr/local/jenkinstomcat/myartifacts/</url>
        </repository>
-   </distributionManagement>
+</distributionManagement>
 
   <dependencies>
     <dependency>
